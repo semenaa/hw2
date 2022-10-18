@@ -3,8 +3,9 @@ import os.path
 dishes = {}
 ROOT_PATH = os.getcwd()
 FILE_NAME = 'recipes.txt'
-with open(FILE_NAME) as f:
-    full_path = os.path.join(ROOT_PATH, FILE_NAME)
+full_path = os.path.join(ROOT_PATH, FILE_NAME)
+
+with open(full_path) as f:
     dish_name = ''
     ingr_count = 0
     for line in f:
